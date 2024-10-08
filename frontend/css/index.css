@@ -1,0 +1,42 @@
+nav{
+    text-align: right;
+}
+
+nav button{
+    margin-right: 40px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: rgb(14, 183, 14);
+}
+
+nav button a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+/* .donorList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80vw;
+    margin: auto;
+} */
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.edit-btn{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+}
+.del-btn{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+}

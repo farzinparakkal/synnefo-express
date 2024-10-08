@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.inform{
+    display: flex;
+    /* background-color: lightgreen; */
+    justify-content: space-between;
+    width: 400px;
+    margin: auto;
+}
+.inform input{
+    width: 300px;
+}
+.inbtn{
+    text-align: center;
+}
+.inbtn button{
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
