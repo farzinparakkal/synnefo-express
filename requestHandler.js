@@ -21,30 +21,7 @@ export async function getDonors(req,res){
     res.status(200).send(data)
 }
 
-// Get a single donor by ID
 export async function getDonorById(req, res) {
-    try {
         const donor = await donorSchema.findById(req.params.id);
-        if (donor) {
-            res.status(200).send(donor);
-        } else {
-            res.status(404).send({ error: 'Donor not found' });
-        }
-    } catch (error) {
-        res.status(500).send({ error: error.message });
-    }
-}
-
-// Update a donor's details
-export async function updateDonor(req, res) {
-    try {
-        const updatedDonor = await donorSchema.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        if (updatedDonor) {
-            res.status(200).send(updatedDonor);
-        } else {
-            res.status(404).send({ error: 'Donor not found' });
-        }
-    } catch (error) {
-        res.status(500).send({ error: error.message });
-    }
+            res.status(200).send(donor);    
 }

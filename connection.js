@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 export default async function connection() {
-    const db=await mongoose.connect('mongodb://127.0.0.1:27017/bank')
+    const db=await mongoose.connect('mongodb://127.0.0.1:27017/bldbank')
     console.log("database connected");
     
     return db
